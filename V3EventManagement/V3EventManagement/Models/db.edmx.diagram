@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="953b56b346744dcf8f25b032eaf6d0f7" Name="Diagram1">
+        <EntityTypeShape EntityType="EventManagementModel1.sysdiagram" Width="1.5" PointX="7.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="EventManagementModel1.tblCatagory" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EventManagementModel1.tblEvent" Width="1.5" PointX="3" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="EventManagementModel1.tblLocation" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EventManagementModel1.tblRegistration" Width="1.5" PointX="5.25" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="EventManagementModel1.tblUser" Width="1.5" PointX="3" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="EventManagementModel1.tblUserDetail" Width="1.5" PointX="5.25" PointY="8.375" IsExpanded="true" />
+        <AssociationConnector Association="EventManagementModel1.FK_tblEvent_tblCatagory" ManuallyRouted="false" />
+        <AssociationConnector Association="EventManagementModel1.FK_tblEvent_tblLocation" ManuallyRouted="false" />
+        <AssociationConnector Association="EventManagementModel1.FK_tblRegistration_tblEvent" ManuallyRouted="false" />
+        <AssociationConnector Association="EventManagementModel1.FK_tblRegistration_tblUser" ManuallyRouted="false" />
+        <AssociationConnector Association="EventManagementModel1.FK_tblUserDetail_tblUser" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

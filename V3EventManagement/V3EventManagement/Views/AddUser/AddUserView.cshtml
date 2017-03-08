@@ -1,0 +1,41 @@
+﻿@model  V3EventManagement.Models.AddUserViewModel
+
+
+<div class="row">
+     <div class="col-md-8">
+            @using (Html.BeginForm("AddUsers", "AddUser"))
+            {
+                @Html.LabelFor(m => m.UserID, new { @class = "col-md-2 control-label" })
+                @Html.TextBoxFor(m => m.UserID, new { @class = "form-control" })<br />
+
+
+                @Html.LabelFor(m => m.FirstName, new { @class = "col-md-2 control-label" })
+                @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control" })<br />
+
+                @Html.LabelFor(m => m.LastName, new { @class = "col-md-2 control-label" })
+                @Html.TextBoxFor(m => m.LastName, new { @class = "form-control" })<br />
+
+                @Html.LabelFor(m => m.Username, new { @class = "col-md-2 control-label" })
+                @Html.TextBoxFor(m => m.Username, new { @class = "form-control" })<br />
+
+                @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label" })
+                @Html.TextBoxFor(m => m.Password, new { @class = "form-control" })<br />
+
+                @Html.LabelFor(m => m.Role, new { @class = "col-md-2 control-label" })
+                @Html.TextBoxFor(m => m.Role, new { @class = "form-control" })<br />
+
+
+                @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })
+                @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })<br />
+
+                @Html.LabelFor(m => m.Contact, new { @class = "col-md-2 control-label" })
+                @Html.TextBoxFor(m => m.Contact, new { @class = "form-control" })<br />
+
+                @Html.LabelFor(m => m.Address, new { @class = "col-md-2 control-label" })
+                @Html.TextBoxFor(m => m.Address, new { @class = "form-control" })<br />
+
+                <input type="submit" class="btn btn-danger" value="Register"/>
+
+            }
+            </div>
+    </div>
